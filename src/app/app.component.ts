@@ -15,4 +15,6 @@ export class AppComponent {
     {id: '3', name: 'mike', isctive: true}
   ];
   users$ = of(this.users);
+  // incase users come from an api
+ // username$ = this.users$.pipe(map((users) => this.users.map((user) => user.name)));
 }
